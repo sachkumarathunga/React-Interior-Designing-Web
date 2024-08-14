@@ -1,0 +1,87 @@
+/* src/components/OurProcess.css */
+
+.our-process {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 40px;
+    /* Space between text and images */
+}
+
+.text-content h1 {
+    font-size: 4rem;
+    /* Adjust font size */
+    font-weight: 200;
+    margin-bottom: 20px;
+    
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    /* Adjust font size */
+    font-weight: 300;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.image-content {
+    flex: 1;
+    position: relative;
+}
+
+.image-content .main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.image-content .secondary-image {
+    position: absolute;
+    margin-bottom: -2cm;
+    bottom: -10px;
+    /* Adjust positioning */
+    margin-left: 10cm;
+    /* Adjust positioning */
+    width: 50%;
+    
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.12) -30px 35px 60px 0px;
+    --top-left: -20% -20%;
+    --top-right: 100% -20%;
+    --btm-right: 78% calc(100% + 160px);
+    --btm-left: -120px calc(100% + 160px);
+    clip-path: polygon(var(--top-left), var(--top-right), var(--btm-right), var(--btm-left));
+    
+}
+
+@media screen and (max-width: 800px) {
+    .our-process {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .text-content {
+        padding-right: 0;
+    }
+
+    .image-content {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .image-content .secondary-image {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+}

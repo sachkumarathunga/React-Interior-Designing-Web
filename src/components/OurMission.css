@@ -1,0 +1,32 @@
+/* src/components/OurMission.css */
+
+.our-mission {
+    text-align: center;
+    padding: 60px 20px;
+    /* Adjust padding as necessary */
+    max-width: 800px;
+    margin: 0 auto;
+    /* Center align the section */
+}
+
+.our-mission h1 {
+    font-size: 4rem;
+    /* Adjust the font size */
+    font-weight: 200;
+    margin-bottom: 20px;
+    /* Space between heading and paragraph */
+}
+
+.our-mission p {
+    font-size: 1.25rem;
+    /* Adjust the font size */
+    font-weight: 300;
+    line-height: 1.6;
+    /* Adjust line height for readability */
+    color: #333;
+    /* Set text color */
+    margin: 0 auto;
+    /* Center align the text */
+    max-width: 700px;
+    /* Limit paragraph width */
+}

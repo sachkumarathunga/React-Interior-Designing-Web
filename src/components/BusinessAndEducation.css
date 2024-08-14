@@ -1,0 +1,85 @@
+.Container-sc-1uyjznq-0.eBZEyY {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.Grid-sc-1gc00t8-0.HomeIndustries__IndustriesGrid-sc-12x8pk9-5.eavKAV {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.Grid__Item-sc-1gc00t8-1.HomeIndustries__IndustryItem-sc-12x8pk9-6.hzBbuM {
+    width: 48%;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 1px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.AngledImg__StyledAngledImg-sc-l04nmq-0.eedwbc.HomeIndustries__IndustryImg-sc-12x8pk9-7.iexjdx {
+    overflow: hidden;
+}
+
+.RatioImg__Wrapper-sc-8qesjk-1.fZxNrn {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 57.5%;
+}
+
+.RatioImg__Img-sc-8qesjk-0.dwEpAz {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(-20% -20%, 100% -20%, 78% calc(100% + 160px), -120px calc(100% + 160px));
+}
+
+.HomeIndustries__IndustryContent-sc-12x8pk9-8.jKMlSJ {
+    margin-top: 2cm;
+    padding: 0rem;
+}
+
+.H__H4-sc-be5gk5-2.StwfE {
+  margin: 0px;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 200;
+  line-height: 1.2;
+  display: block;
+  
+  font-size: 2.25rem;
+  }
+
+.HomeIndustries__IndustryCopy-sc-12x8pk9-9.fywiye {
+    margin: 30px 0px 35px;
+    font-family: Oscine,
+    sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(97, 97, 97);
+}
+
+.StyledLink-sc-zurfbq-0.vQgHw {
+    font-family: Quiroh,
+    sans-serif;
+    font-size: 1.125rem;
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.StyledLink-sc-zurfbq-0.vQgHw:hover {
+    text-decoration: underline;
+}

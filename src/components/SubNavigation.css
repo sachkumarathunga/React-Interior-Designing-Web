@@ -1,0 +1,31 @@
+.subnav-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.subnav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.subnav-item {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.subnav-item img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.subnav-item p {
+    font-family: 'Quiroh', sans-serif;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+}

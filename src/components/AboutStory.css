@@ -1,0 +1,52 @@
+.about-story {
+
+    display: grid;
+    grid-template-columns: 3.5fr 2fr;
+    /* Adjust the width of the columns as needed */
+    align-items: start;
+    /* Align items to the start of the grid */
+    gap: 4rem;
+    /* Add some space between the columns */
+    padding: 4rem;
+    /* Add padding around the content */
+}
+
+.fLhVRG {
+margin-top: 0cm;
+    margin-left: 0cm;
+    font-size: 4.375rem;
+  
+    color: inherit;
+    font-family: inherit;
+    font-weight: 200;
+    line-height: 1.2;
+}
+
+@media screen and (max-width: 1239px) {
+    .fLhVRG {
+        font-size: 3.75rem;
+    }
+}
+
+.cdElQe p {
+  
+    font-family: Oscine,
+    sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(97, 97, 97);
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+@media screen and (max-width: 1079px) {
+    .about-story {
+        grid-template-columns: 1fr;
+        /* Stack columns on top of each other on smaller screens */
+    }
+}

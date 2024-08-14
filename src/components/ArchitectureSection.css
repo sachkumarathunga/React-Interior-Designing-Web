@@ -1,0 +1,122 @@
+.architecture-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px;
+ margin-right: 12CM;
+    background-color:rgb(240, 240, 240);
+    ;
+    
+}
+
+.architecture-images {
+    
+    display: flex;
+    position: relative;
+    flex: 1;
+    max-width: 50%;
+    margin-left: 0;
+    /* Ensure there is no margin on the left */
+}
+
+.architecture-images .image1 {
+    width: 470px;
+    margin-left: -3CM;
+    /* Increase size */
+    height: 450px;
+    z-index: 2;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.12) -30px 35px 60px 0px;
+    clip-path: polygon(0 0, 100% 0, 78% 100%, 0% 100%);
+}
+
+.architecture-images .image2 {
+    width: 550px;
+    /* Increase size */
+    height: 550px;
+    z-index: 1;
+    position: absolute;
+    top: 80px;
+    /* Adjust positioning */
+    left: 0px;
+    /* Remove padding/margin on the left */
+    box-shadow: rgba(0, 0, 0, 0.12) -20px 25px 50px 0px;
+}
+
+.architecture-text {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 60px;
+}
+
+.architecture-text h2 {
+            font-size: 3.75rem;
+    margin-bottom: 20px;
+    margin: 0px;
+    color: inherit;
+    font-family: inherit;
+    font-weight: 200;
+    line-height: 1.2;
+}
+
+.architecture-text p {
+    font-family: Oscine, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(97, 97, 97);
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.architecture-text ul {
+    list-style: disc;
+    /* Add bullet points */
+    padding-left: 20px;
+    /* Add some padding to indent the bullets */
+    display: flex;
+    flex-wrap: wrap;
+        font-family: Oscine,
+        sans-serif;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: rgb(97, 97, 97);
+}
+
+.architecture-text ul li {
+    width: 50%;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .architecture-section {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .architecture-text {
+        max-width: 100%;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .architecture-images {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .architecture-images .image1,
+    .architecture-images .image2 {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        box-shadow: none;
+        clip-path: none;
+    }
+}

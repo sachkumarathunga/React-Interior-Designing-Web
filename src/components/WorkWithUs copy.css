@@ -1,0 +1,70 @@
+/* src/components/WorkWithUs.css */
+
+.work-with-us {
+    padding: 40px 0;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1cm;
+    padding: 50px 0px 125px;
+}
+
+.work-with-us-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.work-with-us-image img {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.12) -30px 35px 60px 0px;
+    --top-left: -20% -20%;
+    --top-right: 100% -20%;
+    --btm-right: 58% calc(100% + 160px);
+    --btm-left: -120px calc(100% + 160px);
+    clip-path: polygon(var(--top-left), var(--top-right), var(--btm-right), var(--btm-left));
+    
+}
+
+.work-with-us-content {
+    max-width: 600px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.work-with-us-heading {
+    font-size: 3.75rem;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.work-with-us-text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.work-with-us-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-top: 1cm;
+}
+
+.work-with-us-button:hover {
+    background-color: #333;
+}

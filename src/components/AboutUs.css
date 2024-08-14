@@ -1,0 +1,72 @@
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Align items to the start to remove left margin */
+    padding: 0;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margin */
+    width: 100%;
+    /* Ensure the section takes full width */
+     background-color: #f5f5f5;
+}
+
+.about-us-content {
+    text-align: center;
+    width: 100%;
+}
+
+.about-us-content button {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        font-family: Oscine,
+        sans-serif;
+        font-size: 0.875rem;
+        text-align: center;
+        transition: background-color 500ms;
+        transition-behavior: normal;
+        transition-duration: 500ms;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+        transition-property: background-color;
+        position: relative;
+        display: inline-block;
+        line-height: 1;
+        text-decoration: none;
+        cursor: pointer;
+        white-space: nowrap;
+        padding: 20px 90px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        
+        }
+
+
+.about-us-images {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Align items to the start to remove left margin */
+    width: 50%;
+     margin-top: -300px;
+    /* Adjust width to 50% */
+ 
+    --top-left: -20% -20%;
+    --top-right: 100% -20%;
+    --btm-right: 78% calc(100% + 160px);
+    --btm-left: -120px calc(100% + 160px);
+    clip-path: polygon(var(--top-left), var(--top-right), var(--btm-right), var(--btm-left));
+    /* Custom shape for selected image */
+}
+
+.about-us-images img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    margin-top: 60px;
+    height: auto;
+    /* Adjust the height to be auto */
+    clip-path: polygon(var(--top-left), var(--top-right), var(--btm-right), var(--btm-left));
+    /* Custom shape for selected image */
+}

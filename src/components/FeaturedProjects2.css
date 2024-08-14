@@ -1,0 +1,127 @@
+.featured-projects-2 {
+    font-family: inherit;
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+    
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #fff;
+}
+
+.featured-projects-2 h2
+ {
+
+   display: inline-block;
+   min-width: 650px;
+   padding-right: 125px;
+   padding-bottom: 60px;
+   border-bottom: 2px solid rgb(255, 255, 255);
+   color: inherit;
+   font-family: inherit;
+   font-weight: 200;
+   line-height: 1.2;
+   font-size: 2.5rem;
+   margin-left: 2cm;
+
+   }
+   
+ 
+.slide {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(0.9);
+    background-color: transparent;
+}
+
+.slide.selected {
+    transform: scale(1);
+    background-color: #fff;
+    /* White background for selected image */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slide.selected img {
+    transform: scale(1);
+    background-color: #fff;
+    /* White background for selected image */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --top-left: -20% -20%;
+    --top-right: 100% -20%;
+    --btm-right: 78% calc(100% + 160px);
+    --btm-left: -120px calc(100% + 160px);
+    clip-path: polygon(var(--top-left), var(--top-right), var(--btm-right), var(--btm-left));
+    /* Custom shape for selected image */
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slide:not(.selected) img {
+    clip-path: polygon(10% 0%, 90% 0%, 90% 100%, 10% 100%);
+    /* Triangular shape for non-selected images */
+    opacity: 0.5;
+}
+
+.slick-center img {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+}
+
+.search-icon {
+    font-size: 36px;
+    color: black;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.slide:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.slide:hover .overlay .circle {
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

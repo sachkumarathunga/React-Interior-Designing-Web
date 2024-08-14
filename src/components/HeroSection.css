@@ -1,0 +1,57 @@
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    
+}
+
+.hero-section-content {
+    max-width: 50%;
+}
+
+.hero-section-content h1 {
+   margin: 0px;
+   color: inherit;
+   font-family: inherit;
+   font-weight: 200;
+   line-height: 1.2;
+   font-size: 3.75rem;
+   margin-left: 4cm;
+   margin-right: 3cm;
+   
+}
+
+.hero-section-content p {
+    margin-top: 4cm;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-left: 12cm;
+    margin-right: -6cm;
+}
+
+.hero-section-video {
+    position: relative;
+    max-width: 20%;
+    height: 400px;
+    /* Adjust the height as needed */
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(236, 233, 233, 0.2);
+    --top-left: 40% -20%;
+    --top-right: 100% -20%;
+    --btm-right: 100% 150%;
+    --btm-left: 0% 140%;
+    clip-path: polygon(var(--top-left), var(--top-right), var(--btm-right), var(--btm-left));
+    /* Custom shape for selected video */
+}
+
+.hero-section-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.2);
+    /* Adjust scale if needed */
+}

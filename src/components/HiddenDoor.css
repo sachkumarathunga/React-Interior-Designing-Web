@@ -1,0 +1,145 @@
+.hidden-door-section {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #F2F2F2;
+    /* Light Gray background for the section */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for the entire section */
+    padding: 20px;
+    /* Added padding to give space for the shadow */
+   
+    /* Rounded corners for a softer look */
+}
+
+.section-header {
+    display: inline-block;
+    min-width: 800px;
+    padding-right: 125px;
+    padding-bottom: 60px;
+    border-bottom: 2px solid #C9D955;
+    /* Lime Green border */
+    color: #4b4947;
+    /* Darker gray for the header text */
+    font-family: inherit;
+    font-weight: 200;
+    line-height: 1.2;
+    font-size: 2.5rem;
+    margin-left: 2cm;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    /* Slight text shadow for added depth */
+}
+
+.hidden-door-container {
+    position: relative;
+    width: 900px;
+    height: 600px;
+    margin: 0 auto;
+    border: 2px solid #D9D5D2;
+    /* Soft Beige border */
+    overflow: hidden;
+    perspective: 2000px;
+    background-color: #F2F2F2;
+    /* Matches section background */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* More pronounced shadow for the container */
+ 
+    /* Rounded corners for a cohesive look */
+}
+
+.door {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #459DBF 50%, #A2BF39 50%);
+    /* Two-color polygonal design */
+    transition: transform 1s ease;
+    cursor: pointer;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    z-index: 2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Shadow for the door */
+}
+
+.door-handle {
+    width: 20px;
+    height: 50px;
+    background-color: #C9D955;
+    /* Lime Green handle */
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Shadow for the handle */
+}
+
+.door.open {
+    transform: rotateY(-75deg);
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3);
+    /* Enhanced shadow when the door is open */
+}
+
+.card-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: scale(0);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* Shadow for the card container */
+}
+
+.card-container.visible {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.card-image {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Shadow for the card image */
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
+    background-color: #A2BF39;
+    /* Olive Green card background */
+}
+
+.zoom-controls {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow above the controls */
+}
+
+.zoom-controls button {
+    margin: 0 10px;
+    padding: 8px 12px;
+    background-color: #A2BF39;
+    /* Olive Green buttons to match the card */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Shadow for the buttons */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.zoom-controls button:hover {
+    background-color: #D9D5D2;
+    /* Soft Beige hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /* Enhanced shadow on hover */
+}

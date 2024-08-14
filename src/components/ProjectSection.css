@@ -1,0 +1,102 @@
+.eeeNzp {
+    margin-top: -6cm;
+    /* Slightly reduced top margin */
+    padding-top: 1cm;
+    /* Keep a comfortable top padding */
+    padding-left: 6cm;
+    /* Slightly reduced left padding */
+    padding-right: 4cm;
+    /* Slightly reduced right padding */
+}
+
+.bbJFvu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 90px;
+    /* Keep a comfortable bottom margin */
+    padding: 0;
+    gap: 1.5cm;
+    /* Keep a comfortable gap between elements */
+}
+
+.bbJFvu.reverse {
+    flex-direction: row-reverse;
+    margin-top: 1.5cm;
+    /* Keep a comfortable top margin */
+    align-items: center;
+    margin-left: -1cm;
+    /* Keep a slight negative margin for balance */
+}
+
+.eBZEyY {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.ratio-img-wrapper-sc-8qesjk-1,
+.ratio-img-wrapper-sc-8qesjk-2 {
+    width: 580px;
+    height: 435px;
+    margin-left: -0.5cm;
+    /* Slightly reduced left margin */
+    transition: transform 0.3s ease;
+}
+
+.ratio-img-wrapper-sc-8qesjk-1:hover,
+.ratio-img-wrapper-sc-8qesjk-2:hover {
+    transform: scale(1.1);
+}
+
+.project-image-copyblock-content-sc-di9xrj-1,
+.project-image-copyblock-content-sc-di9xrj-2 {
+    margin-top: 0cm;
+    /* Align text with image */
+    width: 50%;
+    /* Keep the width for readability */
+    margin-right: 0.5cm;
+    /* Slight right margin for spacing */
+    padding-left: 0.5cm;
+    /* Slight left padding for readability */
+    font-family: Oscine, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(97, 97, 97);
+}
+
+.project-image-copyblock-content-sc-di9xrj-2 {
+    max-width: 50%;
+    /* Consistent text block width */
+    margin-left: -0.5cm;
+    /* Slight negative left margin for alignment */
+}
+
+@media screen and (max-width: 1239px) {
+
+    .project-image-copyblock-content-sc-di9xrj-1,
+    .project-image-copyblock-content-sc-di9xrj-2 {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        /* Reduced padding for mobile */
+    }
+
+    .bbJFvu {
+        flex-direction: column;
+    }
+
+    .bbJFvu.reverse {
+        flex-direction: column;
+        margin-top: 1.5cm;
+        /* Keep a balanced top margin */
+    }
+
+    .ratio-img-wrapper-sc-8qesjk-1,
+    .ratio-img-wrapper-sc-8qesjk-2 {
+        width: 100%;
+        margin-left: 0;
+        /* Centered images in mobile view */
+    }
+}

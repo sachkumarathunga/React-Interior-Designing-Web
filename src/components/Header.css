@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background-color: white;
+    border-bottom: none;
+    z-index: 1200;
+    height: 100px;
+    /* Adjust this value to increase the header height */
+}
+
+.appbar {
+    box-shadow: none;
+    z-index: 1100;
+    height: 100px;
+    background-color: #66B8D9;
+    /* Ensure the AppBar has the same height as the header */
+}
+
+.menu-icon {
+    color: black;
+}
+
+.nav-container {
+    position: fixed;
+    top: 80px;
+    /* Adjust this based on your AppBar height */
+    left: 0;
+    right: 0;
+    background-color: white;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.10s ease-out;
+    z-index: 2000;
+}
+
+.nav-container.open {
+    max-height: 300vh;
+    transition: max-height 0.10s ease-in;
+}

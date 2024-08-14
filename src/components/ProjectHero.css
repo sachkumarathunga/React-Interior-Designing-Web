@@ -1,0 +1,105 @@
+.project-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    /* Adjusted padding for more space */
+    background-color: white;
+    margin-bottom: 170px;
+    flex-direction: row;
+    height: 150vh;
+  
+
+    /* Adjusted height for the section */
+}
+
+
+.hero-image-container {
+    position: relative;
+    flex: 1;
+    margin-right: -1.5cm;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.12) -30px 35px 60px 0px;
+   .isoNtD {
+       box-shadow: rgba(0, 0, 0, 0.12) -30px 35px 60px 0px;
+       --top-left: 15% 0;
+       --top-right: calc(100% + 120px) 0;
+       --btm-right: calc(100% + 120px) calc(100% + 160px);
+       --btm-left: -2% calc(100% + 160px);
+       clip-path: polygon(var(--top-left), var(--top-right), var(--btm-right), var(--btm-left));
+   
+    }}
+
+.hero-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    inset: 0px;
+    object-fit: cover;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 10rem;
+    /* Adjusted padding for content */
+    margin-left: 3cm;
+    max-width: 45%;
+    /* Adjusted width for better alignment */
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    /* Increased font size for better readability */
+    margin: 0px;
+    color: inherit;
+    font-family: inherit;
+    font-weight: 200;
+    line-height: 1.2;
+    
+    margin-bottom: 1rem;
+}
+
+.hero-content .location {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 35px;
+}
+
+.hero-content p {
+    font-family: 'Oscine', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(97, 97, 97);
+}
+
+@media screen and (max-width: 1439px) {
+    .hero-content {
+        max-width: 50%;
+        padding-right: 2rem;
+        /* Adjusted padding for smaller screens */
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .project-hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        height: auto;
+        /* Adjusted height for mobile view */
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding-right: 0;
+        margin-top: 1rem;
+    }
+
+    .hero-image-container {
+        width: 100%;
+        height: 60vw;
+     
+        margin-bottom: 1rem;
+    }
+}

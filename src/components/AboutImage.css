@@ -1,0 +1,71 @@
+.about-story-images {
+    margin-top: 4cm;
+    position: relative;
+    max-width: 1200px;
+margin-left: 0cm;
+    height: auto;
+    margin-right: 0cm;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 0cm;
+}
+
+.angled-image {
+    position: absolute;
+    transform-origin: center;
+}
+
+.angled-image-1 {
+    top: -7cm;
+    /* Remove margin from the top */
+    left: 6cm;
+    /* Remove margin from the left */
+    width: 500px;
+    height: 385px;
+    /* Set a specific width *
+    z-index: 2;
+    /* Ensure it's on top */
+    --top-left: 0 0;
+    --top-right: 100% 0;
+    --btm-right: 85% 100%;
+    --btm-left: 0 100%;
+    clip-path: polygon(var(--top-left), var(--top-right), var(--btm-right), var(--btm-left));
+    
+}
+
+.angled-image-2 {
+    width: 500px;
+    height: 385px;
+    bottom: 3cm;
+    /* Remove margin from the bottom */
+    right: -8cm;
+    /* Remove margin from the right */
+    box-shadow: rgba(0, 0, 0, 0.12) -30px 35px 60px 0px;
+    --top-left: 15% 0;
+    --top-right: calc(100% + 120px) 0;
+    --btm-right: calc(100% + 120px) calc(100% + 160px);
+    --btm-left: -2% calc(100% + 160px);
+    clip-path: polygon(var(--top-left), var(--top-right), var(--btm-right), var(--btm-left));
+    
+    z-index: 1;
+    /* Ensure it's behind the first angled image */
+}
+
+@media screen and (max-width: 800px) {
+    .angled-image {
+        position: static;
+        transform: none;
+        width: 100%;
+        clip-path: none;
+        /* Remove clipping on smaller screens */
+        margin-top: 20px;
+    }
+
+    .main-image img {
+        margin-bottom: 1rem;
+    }
+}
